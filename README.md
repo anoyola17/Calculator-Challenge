@@ -1,0 +1,1 @@
+This is a calculator created using HTML, CSS, and JavaScript. I wanted to implement something new with the last function in the equalButton, but I still couldn't resolve it. I have more to learn, and hopefully, I will figure it out one day.
