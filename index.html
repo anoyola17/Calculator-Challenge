@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!--- OVERALL CALCULATOR STYLE ---> 
+    <section>
+        <h1>Calculator</h1> <!--- HEADING STYLE ---> 
+        
+        <form >  <!--- THE STYLE INSIDE SCREEN ---> 
+            <input id="displayScreen">
+        </form>
+        
+        <!--- BUTTONS IN GRID---> 
+        <div id="buttons__calc-keyboard">
+            <button onclick="valueButton('7')">7</button>
+            <button onclick="valueButton('8')">8</button>
+            <button onclick="valueButton('9')">9</button>
+            <button onclick="valueButton('*')">x</button>
+
+            <button onclick="valueButton('4')">4</button>
+            <button onclick="valueButton('5')">5</button>
+            <button onclick="valueButton('6')">6</button>
+            <button onclick="valueButton('-')">-</button>
+
+            <button onclick="valueButton('1')">1</button>
+            <button onclick="valueButton('2')">2</button>
+            <button onclick="valueButton('3')">3</button>
+            <button onclick="valueButton('+')">+</button>
+
+            <button onclick="valueButton('.')">.</button>
+            <button onclick="valueButton('0')">0</button>
+            <button onclick="valueButton('/')">÷</button>
+
+             <!--- LAST ROW BUTTONS---> 
+            <button class="button__equal-sign" onclick="equalButton('=')">=</button>
+            <button class="button__delete-sign" onclick="deleteButton('Del')">Delete</button>
+            <button class="button__clear-sign" onclick="clearButton('C')">Clear</button>
+        </div>
+    </section>
+
+    <!--- LINK TO JAVASCRIPT ---> 
+    <script src="script.js"></script>
+</body>
+</html>

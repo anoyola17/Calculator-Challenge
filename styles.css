@@ -1,0 +1,174 @@
+/* ------------------------------- DEFAULT MOBILE  -------------------------------*/
+
+/* OUTSIDE CALCULATOR STYLE */
+body{
+    background-color: Gainsboro;
+    margin-top: 2rem; 
+}
+
+/* OVERALL CALCULATOR STYLE */
+section{
+    background-color: MidnightBlue;
+    border-radius: 20px;
+    border: none;
+    padding: 2rem;
+    margin: auto;
+    height: 35rem;
+    width: 15rem;
+} 
+
+/* HEADING STYLE */
+h1{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+/* THE STYLE INSIDE SCREEN */
+#displayScreen{
+    border-radius: 20px;
+    border-color: black;
+    background-color: LightSteelBlue;
+    font-family: 'Playwrite Magyarország';
+    text-align: right;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 2.5rem;
+    height: 10rem;
+    width: 14.7rem;
+}
+
+/* BUTTONS IN GRID */
+#buttons__calc-keyboard{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 0.7rem;
+    grid-row-gap: 1rem;
+    margin-top: 1.5rem;    
+}
+
+/* BUTTONS STYLE */
+button{
+    background-color: OldLace;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: smaller;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0px 8px Gray;
+    padding: 14px;
+}
+
+button:hover{
+    opacity: 80%;
+}
+
+/* LAST ROW BUTTONS */
+.button__delete-sign{
+    grid-column: 1 / 3;
+    background-color: rgb(220, 20, 20);
+    box-shadow: 0px 8px rgb(136, 125, 125);
+}
+
+.button__clear-sign{
+    grid-column: 3 / 5;
+    background-color: Gainsboro;
+}
+
+.button__equal-sign{
+    background-color: LimeGreen;
+    box-shadow: 0px 8px rgb(161, 183, 161);
+}
+
+/* ------------------------------- MEDIA QUERY- TABLET  -------------------------------*/
+@media (min-width: 768px) and (max-width: 1024px){
+
+    section{
+        margin: auto;
+        height: 40rem;
+        width: 40rem;
+    } 
+
+    h1{
+        font-size: 2rem;
+    }
+
+    #displayScreen{
+        font-size: 3rem;
+        height: 10rem;
+        width: 40rem;
+    }
+
+    #buttons__calc-keyboard{
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1rem;
+        margin-top: 2rem;    
+    }
+
+    button{
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+
+    .button__delete-sign{
+        grid-column: 1 / 3;
+        background-color: rgb(220, 20, 20);
+    }
+
+    .button__clear-sign{
+        grid-column: 3 / 5;
+        background-color: Gainsboro;
+    }
+
+    .button__equal-sign{
+        background-color: LimeGreen;
+    }
+
+}
+
+/* ------------------------------- MEDIA QUERY- DESKTOP  -------------------------------*/
+@media (min-width: 1024px) and (max-width: 1800px){
+    
+    section{
+        margin: auto;
+        height: 45rem;
+        width: 55rem;
+    } 
+
+    h1{
+        font-size: 3rem;
+    }
+
+    #displayScreen{
+        font-size: 4rem;
+        height: 10rem;
+        width: 54rem;
+    }
+
+    #buttons__calc-keyboard{
+        grid-column-gap: 2rem;
+        grid-row-gap: 1.5rem;
+        margin-top: 2rem;    
+    }
+
+    button{
+        font-size: 2.5rem;
+        padding: 0.2rem;
+    }
+
+    .button__delete-sign{
+        grid-column: 1 / 3;
+        background-color: rgb(220, 20, 20);
+    }
+
+    .button__clear-sign{
+        grid-column: 3 / 5;
+        background-color: Gainsboro;
+    }
+
+    .button__equal-sign{
+        background-color: LimeGreen;
+    }
+
+}
